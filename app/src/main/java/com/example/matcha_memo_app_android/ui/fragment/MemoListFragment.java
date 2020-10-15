@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import com.example.matcha_memo_app_android.R;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -38,7 +39,7 @@ public class MemoListFragment extends Fragment {
     Map<String, Object> menu;
 
     SimpleDateFormat format = new SimpleDateFormat( "yyyy/MM/dd HH:mm" );
-    List<Map<String, Object>> memoList;
+    List<Map<String, Object>> mMemoList = new ArrayList<>();
 
     @Nullable
     @Override
@@ -88,7 +89,7 @@ public class MemoListFragment extends Fragment {
 
     private SimpleAdapter getAdapter() {
 
-        List<Map<String, Object>> mMemoList = createMemoList();
+        mMemoList = createMemoList();
 
         return new SimpleAdapter(
                 mRootView.getContext(),
@@ -107,10 +108,9 @@ public class MemoListFragment extends Fragment {
             menu = new HashMap<>();
             menu.put("memo", memo);
             menu.put("date", dateFormat);
-            memoList.add(menu);
+            mMemoList.add(menu);
         }
-        return memoList;
+        return mMemoList;
     }
-
 
 }
