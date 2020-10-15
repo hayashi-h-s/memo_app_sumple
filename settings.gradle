@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "matcha_memo_app_android"

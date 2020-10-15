@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_primary_color"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/activity_top_tab_option"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="189dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/toPtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/toolbar_point"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 個人設定見出し -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/option_header_size"
+                android:background="@color/thin_gray"
+                android:elevation="@dimen/sub_header_elevation"
+                android:gravity="center_vertical"
+                android:text="@string/option_heading_setting"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_default"
+                android:paddingLeft="15dp" />
+
+            <LinearLayout style="@style/option_switch_root">
+
+                <ImageView
+                    style="@style/option_switch_icon"
+                    android:src="@drawable/ic_phone" />
+
+                <Switch
+                    android:id="@+id/callPhonePermitRow"
+                    style="@style/option_switch"
+                    android:text="@string/option_call_phone_permit" />
+            </LinearLayout>
+
+            <include layout="@layout/view_option_border" />
+
+            <LinearLayout style="@style/option_switch_root">
+
+                <ImageView
+                    style="@style/option_switch_icon"
+                    android:src="@drawable/ic_videocam" />
+
+                <Switch
+                    android:id="@+id/videoCallPermitRow"
+                    style="@style/option_switch"
+                    android:text="@string/option_video_call_permit" />
+            </LinearLayout>
+
+            <include layout="@layout/view_option_border" />
+
+            <LinearLayout style="@style/option_switch_root">
+
+                <ImageView
+                    style="@style/option_switch_icon"
+                    android:src="@drawable/ic_email" />
+
+                <Switch
+                    android:id="@+id/orderByUnreadRow"
+                    style="@style/option_switch"
+                    android:text="@string/option_vibration" />
+            </LinearLayout>
+
+            <include layout="@layout/view_option_border" />
+
+            <!-- 通知見出し -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/option_header_size"
+                android:background="@color/thin_gray"
+                android:elevation="@dimen/sub_header_elevation"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/option_notification"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_default" />
+
+            <LinearLayout style="@style/option_switch_root">
+
+                <ImageView
+                    style="@style/option_switch_icon"
+                    android:src="@drawable/ic_notifications" />
+
+                <Switch
+                    android:id="@+id/pushNotification"
+                    style="@style/option_switch"
+                    android:text="@string/option_notification_permit" />
+            </LinearLayout>
+
+            <!-- その他見出し -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/option_header_size"
+                android:background="@color/thin_gray"
+                android:elevation="@dimen/sub_header_elevation"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/option_title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_default" />
+
+            <com.example.matcha_memo_app_android.ui.customview.OptionRowView
+                android:id="@+id/currentVersionRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:option_type="currentVersionRow" />
+
+            <com.example.matcha_memo_app_android.ui.customview.OptionRowView
+                android:id="@+id/agreementRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:option_type="terms_of_service" />
+
+            <com.example.matcha_memo_app_android.ui.customview.OptionRowView
+                android:id="@+id/privacyPolicyRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:option_type="privacy_policy" />
+
+            <com.example.matcha_memo_app_android.ui.customview.OptionRowView
+                android:id="@+id/licenseRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:option_type="license" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="app_primary_color">#70CA73</color><!-- アプリのメインカラー -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#968D8D</color>
+    <color name="blue_light">#8FBDD9</color>
+    <color name="blue">#8FA2D9</color>
+    <color name="green_clear_light">#33A2C654</color>
+    <color name="green_light">#A2C654</color>
+    <color name="green_dark">#82A634</color>
+    <color name="red">#D37F8F</color>
+    <color name="orange">#FA4F43</color>
+    <color name="red_dark">#B35F6F</color>
+    <color name="brown">#B2884E</color>
+    <color name="black">#000000</color>
+    <color name="clear">#00FFFFFF</color>
+    <color name="clear_white">#99FFFFFF</color>
+    <color name="clear_dark">#99333333</color>
+    <color name="dark_gray_alpha">#EC333333</color>
+    <color name="gray_alpha">#CC968D8D</color>
+    <color name="light_gray_alpha">#66968D8D</color>
+    <color name="super_light_gray_alpha">#33929496</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+
+    <!-- common color start-->
+    <color name="text_color_default">#445061</color>
+    <color name="text_color_deep_gray">#ff666666</color>
+    <color name="text_color_gray">#ff888888</color>
+    <color name="text_link_color">#8FA2D9</color>
+    <color name="app_button_disable_color">#968D8D</color>
+    <color name="light_gray">#ffcccccc</color>
+    <color name="dark_gray">#ff333333</color>
+    <color name="super_light_gray">#F7F8FA</color>
+    <color name="dim_gray">#DDDDDD</color>
+    <color name="thin_gray">#E7E8EA</color>
+</resources>

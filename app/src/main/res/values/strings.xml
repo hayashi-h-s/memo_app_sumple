@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">メモアプリ</string>
+
+    <!-- toolbar start-->
+    <string name="toolbar_memo">メモ</string>
+    <string name="toolbar_point">99pt</string>
+    <!-- toolbar end-->
+
+    <!-- fragment_memo_list -->
+    <string name="add_memo">追加</string>
+
+    <!-- fragment_point_list -->
+    <string name="time_purchaser_only">初回購入者限定</string>
+
+    <!-- fragment_option -->
+    <string name="option_title">その他</string>
+    <string name="option_heading_setting">個人設定</string>
+    <string name="option_notification">通知</string>
+    <string name="option_notification_permit">通知を許可する</string>
+    <string name="option_vibration">バイブレーション</string>
+    <string name="option_call_phone_permit">着信許可（音声）</string>
+    <string name="option_video_call_permit">着信許可（ビデオ）</string>
+    <string name="option_current_version">現在のバージョン</string>
+    <string name="option_agreement">利用規約</string>
+    <string name="option_license">ライセンス</string>
+    <string name="option_privacy_policy">プライバシーポリシー</string>
+
+    <!-- activity_top_tab start-->
+    <string name="activity_top_tab_top">トップ</string>
+    <string name="add_point_add">PT追加</string>
+    <string name="activity_top_tab_option">その他</string>
+    <!-- activity_top_tab end-->
+
+
+
+
+</resources>

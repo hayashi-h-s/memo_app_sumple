@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OptionRowType">
+        <attr name="option_type" format="enum">
+            <enum name="currentVersionRow" value="0" />
+            <enum name="terms_of_service" value="1" />
+            <enum name="privacy_policy" value="2" />
+            <enum name="license" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
